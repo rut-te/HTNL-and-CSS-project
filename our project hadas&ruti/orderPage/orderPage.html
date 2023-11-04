@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./orderPage.css">
+    <title>להזמנה</title>
+    <link rel="shortcut icon" href="../pictures/logo.png">
+</head>
+
+<body dir="rtl">
+    <a href="../homePage/homePage.html" title="לדף הבית"><img id="logo" src="../pictures/logo.png" alt="לוגו"></a>
+    <div id="orderdetails">
+        <h1>אנא מלאו את טופס ההזמנה:</h1>
+        <div class="food">
+            <h2>פיצות:</h2>
+            <div class="type">
+                <input type="number" id="pizzaTomato" min="0" value="0">
+                <label for="pizzaTomato">פיצה עגבניות</label>
+                <input type="number" id="pizzaPinapple" min="0" value="0">
+                <label for="pizzaPinapple">פיצה אננס</label>
+                <input type="number" id="pizzaSpecial" min="0" value="0">
+                <label for="pizzaSpecial">פיצה מיוחדת</label>
+                <input type="number" id="pizzaBasili" min="0" value="0">
+                <label for="pizzaBasili">פיצה בזיליקום</label>
+            </div>
+            <div class="sauce">
+                <h3>רטבים:</h3>
+                <input type="checkbox" id="netural">
+                <label for="netural">רוטב פיצה</label>
+                <input type="checkbox" id="neturalPluse">
+                <label for="neturalPluse">רוטב פיצה פיקנטי</label>
+                <input type="checkbox" id="shoom">
+                <label for="shoom">רוטב שום</label>
+            </div>
+        </div>
+        <div class="food">
+            <h2>פסטות:</h2>
+            <div class="type">
+                <input type="number" id="pastaAlfredo" min="0" value="0">
+                <label for="pastaAlfredo">פסטה אלפרדו</label>
+                <input type="number" id="pastaRoza" min="0" value="0">
+                <label for="pastaRoza">פסטה רוזה</label>
+                <input type="number" id="pastaMuk" min="0" value="0">
+                <label for="pastaMuk">פסטה מוקרמת</label>
+                <input type="number" id="pastaTomato" min="0" value="0">
+                <label for="pastaTomato">פסטה עגבניות</label>
+            </div>
+            <div id="withcheese">
+                <h3>גבינה צהובה:</h3>
+                <input type="radio" id="yes" name="cheese">
+                <label for="yes">כן</label>
+                <input type="radio" id="no" name="cheese">
+                <label for="no">לא</label>
+            </div>
+        </div>
+    </div>
+    <div class="food">
+        <h2>סלטים:</h2>
+        <div class="type">
+            <input type="number" id="homeSalad" min="0" value="0">
+            <label for="homeSalad">סלט הבית</label>
+            <input type="number" id="muzarelaSalad" min="0" value="0">
+            <label for="muzarelaSalad">סלט מוצרלה</label>
+            <input type="number" id="griceSalad" min="0" value="0">
+            <label for="griceSalad">סלט יווני</label>
+            <input type="number" id="tunaSalad" min="0" value="0">
+            <label for="tunaSalad">סלט טונה</label>
+        </div>
+        <div class="sauce">
+            <h3>רטבים:</h3>
+            <input type="checkbox" id="shoom">
+            <label for="shoom">רוטב שום</label>
+            <input type="checkbox" id="thousend">
+            <label for="thousend">רוטב אלף האיים</label>
+            <input type="checkbox" id="vinigret">
+            <label for="vinigret">רוטב ויניגרט</label>
+            <input type="checkbox" id="honny">
+            <label for="honny">רוטב חרדל ודבש</label>
+        </div>
+    </div>
+    <div class="food">
+        <h2>שתיה:</h2>
+        <div class="type">
+            <input type="number" id="big" min="0" value="0">
+            <label for="big">קולה קולה גדולה</label>
+            <input type="number" id="zero" min="0" value="0">
+            <label for="zero">קוקה קולה זירו גדול</label>
+            <input type="number" id="small" min="0" value="0">
+            <label for="small">קוקה קולה קטן</label>
+            <input type="number" id="can" min="0" value="0">
+            <label for="can">פחית קוקה קולה</label>
+        </div>
+    </div>
+    <div id="details" class="text">
+        <h1 class="titleDivs">אנא מלאו את פרטיכם:</h1>
+        <form action="../thanksPage/thanksPage.html">
+            <div class="food">
+                <div class="type">
+                    <label for="fname" class="detail">שם</label>
+                    <input type="text" id="fname" name="firstname" placeholder="ישראל ישראלי" required>
+                    <label for="fhoneNumber" class="detail">טלפון</label>
+                    <input type="text" id="fhoneNumber" name="fhoneNumber" placeholder="0501234567" required>
+                    <label for="adr" class="detail">כתובת</label>
+                    <input type="text" id="adr" name="address" placeholder="רחוב הורדים" required>
+                    <label for="city" class="detail">עיר</label>
+                    <input type="text" id="city" name="city" placeholder="בית שאן" required>
+                </div>
+            </div>
+            <input id="send" type="submit" type="submit" value="להזמנה">
+        </form>
+</body>
+
+</html>

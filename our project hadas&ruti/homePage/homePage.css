@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Varela Round';
+    src: url(../fonts/VarelaRound-Regular.ttf);
+}
+body {
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    background-image: url(../pictures/backgroundImg.JPG);
+}
+
+#customers {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(168, 167, 167, 0.666);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 0;
+    align-items: center;
+}
+
+.client {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #3b3b3b;
+    font-style: italic;
+    margin: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(230, 128, 11);
+    font-size: 31px;
+}
+
+#background {
+    margin-top: 6%;
+    width: 100%;
+    height: 88vh;
+    object-fit: cover;
+}
+
+#backgroundSmall {
+    display: none;
+    margin-top: 6%;
+    width: 100%;
+    height: 88vh;
+    object-fit: cover;
+}
+
+#ourStor {
+    display: flex;
+    align-items: center;
+    background-color: rgba(168, 167, 167, 0.666);
+    justify-content: space-between;
+    margin-top: 50px;
+    z-index: 2;
+    padding: 0;
+}
+
+#ourStor:hover,
+#history:hover,
+#customers:hover {
+    background-color: rgba(129, 127, 127, 0.666);
+}
+
+#par {
+    width: 40%;
+    margin: 30px 30px 30px 30px;
+    font-size: 24px;
+    text-align: center;
+    height: 100%;
+}
+
+#history {
+    display: flex;
+    background-color: rgba(168, 167, 167, 0.666);
+    justify-content: space-between;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+#his {
+    width: 50%;
+    margin: 30px 30px 30px 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#hisimg {
+    width: 40vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cprofil {
+    width: 7vw;
+    min-width: 74px;
+}
+
+.start {
+    width: 100%;
+    height: 12vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.end {
+    width: 100%;
+    height: 45vh;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+video {
+    width: 60%;
+    border: none;
+}
+
+
+@media screen and (max-width:400px) {
+
+    .end {
+        height: 55vh;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+    .start {
+        height: 30vh;
+    }
+
+    #ourStor {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #par {
+        width: 90vw;
+    }
+
+    #background {
+        display: none;
+    }
+
+    #backgroundSmall {
+        display: inline;
+        margin-top: 15vh;
+    }
+
+    #history {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #hisimg {
+        width: 100%;
+    }
+
+    #his {
+        width: 90%;
+    }
+
+    video {
+        width: 100vw;
+    }
+}
